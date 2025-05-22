@@ -1,17 +1,20 @@
-class Solution():
+class Solution:
     def twoSum(self, nums, target):
-        prevMap = {}
+        prevMap = {} #value: index
 
         for i, n in enumerate(nums):
             diff = target - n
             if diff in prevMap:
-                return [prevMap[diff], i]
+                return[prevMap[diff], i]
             prevMap[n] = i
-        return
+        return 
     
-# test
+# Test
 sol = Solution()
 nums = [3,4,5,6]
 target = 7
-x = sol.twoSum(nums,target)
+x = sol.twoSum(nums, target)
 print(x)
+
+# Time Complexity: O(n)
+# Space Complexity: O(n)
