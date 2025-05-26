@@ -1,6 +1,11 @@
 # LeetCode Solutions
 
-This repository contains my solutions to LeetCode problems, along with explanations and references to helpful tutorials and YouTube videos. It serves as a personal tracking system for my coding practice and learning journey.
+This repository contains my solutions to LeetCode problems, along with explanations for my own reference. It serves as a personal tracking system for my coding practice and learning journey.
+
+## Solutions
+
+### Two Pointers
+- [Container With Most Water](two-pointers/maxArea.py) - O(n) time complexity solution using two pointers technique
 
 ## Acknowledgments
 
