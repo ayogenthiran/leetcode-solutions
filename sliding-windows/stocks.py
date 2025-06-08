@@ -1,6 +1,5 @@
-
 class Solution:
-    def maxProfit(self, prices):
+    def maxProfit(self,prices):
         l,r = 0, 1
         maxP = 0
 
@@ -12,11 +11,12 @@ class Solution:
                 l = r
             r += 1
         return maxP
-    
-# Test
 
-prices = [10,1,5,6,7,1]
-
+# Tes
 sol = Solution()
-x = sol.maxProfit(prices)
+Prices = [10,1,5,6,7,1]
+x = sol.maxProfit(Prices)
 print(x)
+
+# Time Complexity: O(n)
+# Space Complexity: O(1)
