@@ -12,11 +12,8 @@ class Solution:
             res = max(res, r-l+1)
         return res
 
-# Test cases
-# "abcabcbb" -> 3
-# "bbbbb" -> 1
-# "pwwkew" -> 3    
-
+   
+# Test case
 if __name__ == "__main__":
     sol =  Solution()
     x = sol.lengthOfLongestSubstring("abcabcbb")

@@ -1,3 +1,4 @@
+# Find Minimum in Rotated Sorted Array
 class Solution:
     def findMin(self, nums):
         l, r = 0, len(nums) - 1

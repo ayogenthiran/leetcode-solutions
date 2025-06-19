@@ -8,7 +8,7 @@ class Solution:
                 profit = prices[r] - prices[l]
                 maxP = max(maxP, profit)
             else:
-                l = r
+                l = r # Move left pointer to right if we find a lower price
             r += 1
         return maxP
 
