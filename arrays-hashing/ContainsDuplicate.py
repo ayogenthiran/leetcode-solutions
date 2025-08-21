@@ -8,6 +8,8 @@ class Solution():
             hashset.add(n)
         return False
 
+
+
 # Test case
 nums = [1, 2, 3, 3]
 sol = Solution()
