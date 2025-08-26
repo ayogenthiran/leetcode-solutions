@@ -48,4 +48,4 @@ merged = sol.mergeTwoLists(list1, list2)
 print("Merged list:", print_linked_list(merged))
 
 # Time complexity: O(n + m) where n and m are lengths of the two lists
-# Space complexity: O(1) - only using constant extra space    
+# Space complexity: O(1) - only using constant extra space        

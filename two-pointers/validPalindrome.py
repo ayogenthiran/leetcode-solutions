@@ -4,11 +4,11 @@ class Solution:
         left,right = 0, len(s) - 1  
         while left < right:
 
-            while left < right and not self.isalnum(s[left]):
+            while left < right and not self.isalnum(s[left]): # Skip non-alphanumeric from left
                 left += 1
-            while left > right and not self.isalnum(s[right]):
+            while left > right and not self.isalnum(s[right]): # Skip non-alphanumeric from right
                 right -= 1
-            if s[left].lower() != s[right].lower():
+            if s[left].lower() != s[right].lower():  # Compare characters (case-insensitive)
                 return False
             
             # Move both pointers inward
@@ -26,6 +26,9 @@ s = "tab a cat"
 x = sol.isPalindrome(s)
 print(x)
 
-# Time Complexity: O(n)
-# Space Complexity: O(1)    
+# Notes:
+# - Two-pointer technique: O(n) time, O(1) space
+# - Skip non-letters/numbers with isalnum()
+# - Use .lower() for case-insensitive comparison
+
 

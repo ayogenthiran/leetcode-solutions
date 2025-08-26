@@ -61,5 +61,7 @@ head = create_linked_list_with_cycle([3,2,0,-4], 1)
 sol = Solution()
 print(sol.cycleDetection(head))
 
+# Time complexity: O(n)
+# Space complexity: O(1)
 
-
+# This qustion is implemented using Floyd's Tortoise and Hare Algorithm 

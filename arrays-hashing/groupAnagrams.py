@@ -33,7 +33,5 @@ x = sol.groupAnagrams(strs)
 print(x)
 
 # Time Complexity: O(m*n) where:
-# - m is the number of words in the input list
-# - n is the length of the longest word
-# Space Complexity: O(m) where:
-# - m is the number of words we need to store in our result
+# - m is the number of words in the input list, n is the length of the longest word
+# Space Complexity: O(m) where, m is the number of words we need to store in our result

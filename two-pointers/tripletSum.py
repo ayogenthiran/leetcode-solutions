@@ -3,6 +3,7 @@ class Solution():
         res = []
         nums.sort()
 
+        # skip duplicates
         for i, a in enumerate(nums):
             if i > 0 and a == nums[i-1]:
                 continue
@@ -18,7 +19,7 @@ class Solution():
                     res.append([a, nums[l], nums[r]])
                     l += 1
                     r -= 1
-                    while nums[l] == nums[l - 1] and l < r:
+                    while nums[l] == nums[l - 1] and l < r: # skip duplicates on the left and right
                         l += 1
         return res
 
@@ -27,3 +28,6 @@ sol = Solution()
 nums = [-1, 0, 1, 2, -1, -4]
 x = sol.triplet_sum(nums)
 print(x)    
+
+# Time Complexity: O(n^2) - we have a nested loop structure
+# Space Complexity: O(1)/O(n) - we only use a constant amount of extra space

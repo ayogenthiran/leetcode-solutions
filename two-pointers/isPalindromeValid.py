@@ -1,3 +1,5 @@
+# This code implemented using .isalnum() and .lower() methods
+
 class Solution:
     def is_Palindrome(self, s):
         left, right = 0, len(s) - 1
