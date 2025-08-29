@@ -20,3 +20,6 @@ x = [1,2,3,4]
 sol = Solution()
 output = sol.productExceptSelf(x)
 print("output:", output)
+
+# Time Complexity: O(n)
+# Space Complexity: O(1) (excluding the output array)   
